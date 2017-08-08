@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROOM</title>
+    <meta name="Author" content="" />
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#">Découverte</a></li>
+                <li><a href="#">Aide</a></li>
+                <li><a href="#">Inscription</a></li>
+                <li><a href="#">Connexion</a></li>
+            </ul>
+            <h1>UNUSUAL</h1>
+        </div>
+    </header>
+
+    <main class="clearfix">
+
+        <!--       BACKGROUND-->
+        <div class="room">
+            <div class="bck_room">
+            </div>
+        </div>
+        <div class="hilton_content">
+            <div class="fiche_room">
+                <div class="ficheroom_box">
+                    <div class="presentation_bar">
+                        <a href="#hiltonroom_def">
+                            <button id="pres_btn">Présentation</button>
+                        </a>
+                        <a href="#hilton_commentaire">
+                            <button id="comment_btn">Commentaires</button>
+                        </a>
+                        <a href="#hilton_location">
+                            <button id="location_btn">Localisation</button>
+                        </a>
+                    </div>
+
+                    <div class="hotel_room">
+                        <h2>Hôtel Hilton Waikiki</h2>
+                        <img class="star_note" src="img-content/star45.jpg" alt="star">
+                    </div>
+
+                    <div class="form_room">
+                        <label class="form_label">
+                            <span>Nombre de chambre</span>
+                        </label>
+                        <select id="room" name="room">
+                            <optgroup class="family_room" label="Chambre familiale">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6+</option>
+                            </optgroup>
+                            <optgroup class="simple_room" label="Chambre simple">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6+</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form_room">
+                        <label class="form_label">
+                            <span>Type de lit</span>
+                        </label>
+                        <div class="typebed_room">
+                            <img src="img-content/bed42.png" alt="">
+                            <input type="checkbox">
+                            <img src="img-content/bed41.png" alt="">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+
+
+                    <div class="form_room">
+                        <label class="form_label">
+                            <span>Nombre de couchage</span>
+                        </label>
+                        <select id="sleep" name="sleep">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hilton_presentation clearfix">
+                <div class="hilton_room">
+                    <img id="room_one" src="img-content/room_one.jpg" alt="room for one">
+                    <img id="room_two" src="img-content/room_two.jpg" alt="room for two">
+                    <img id="room_three" src="img-content/room_three.jpg" alt="room">
+                </div>
+
+                <div id="hiltonroom_def">
+                    <h3>À propos</h3>
+                    <p>Quam ob rem circumspecta cautela observatum est deinceps et cum edita montium petere coeperint grassatores, loci iniquitati milites cedunt. ubi autem in planitie potuerint reperiri, quod contingit adsidue, nec exsertare lacertos nec crispare permissi tela, quae vehunt bina vel terna, pecudum ritu inertium trucidantur.</p>
+                    <ul>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="hilton_commentaire">
+                <div class="hiltonroom_com">
+                    <h3>Commentaires</h3>
+                    <ul>
+                        <h3>Aurélien</h3>
+                        <img class="staravis_com" src="img-content/star45.jpg" alt="avisvoyageur">
+                        <span>Tum est Cato locutus, quo erat nemo fere senior temporibus illis, nemo prudentior; nunc Laelius et sapiens (sic enim est habitus) et amicitiae gloria excellens de amicitia loquetur. Tu velim a me animum parumper avertas, Laelium loqui ipsum putes. Aa. </span>
+                        <h3>Carine</h3>
+                        <img class="staravis_com" src="img-content/star45.jpg" alt="avisvoyageur">
+                        <span>Tum est Cato locutus, quo erat nemo fere senior temporibus illis, nemo prudentior; nunc Laelius et sapiens (sic enim est habitus) et amicitiae gloria excellens de amicitia loquetur. Tu velim a me animum parumper avertas, Laelium loqui ipsum putes. C. </span>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="hilton_location">
+                <div class="hiltonroom_loc clearfix">
+                    <h3>Localisation</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2563.5847127489783!2d-157.83838117800448!3d21.2831050917475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shilton+hawaiian!5e0!3m2!1sfr!2sfr!4v1485700250788" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <!--////////////////////////// ASIDE /////////////////////////////-->
+        <aside>
+            <div class="hilton_price">
+                <p>120€ /nuit</p>
+            </div>
+            <div class="hiltonform_date">
+                <label class="hilton_label">
+                    <span>Arrivée</span>
+                </label>
+                <div class="hiltondate_input">
+                    <input id="starthilton" type="text" placeholder="jj/mm/aaaa">
+                </div>
+            </div>
+
+
+            <div class="hiltonform_date">
+                <label class="hilton_label">
+                    <span>Départ</span>
+                </label>
+                <div class="hiltondate_input">
+                    <input id="endhilton" type="text" placeholder="jj/mm/aaaa">
+                </div>
+            </div>
+
+            <div class="hilton_booking">
+                <label class="hilton_label">
+                    <span>Options de réservation</span>
+                </label>
+                <ul class="hiltonbooking_li">
+                    <li id="hiltoncancel_li">Annulation gratuite
+                        <input type="checkbox">
+                    </li>
+                    <li id="hiltonprepaid_li">Sans prépaiement
+                        <input type="checkbox">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hilton_search clearfix">
+                <button>RÉSERVER</button>
+            </div>
+        </aside>
+    </main>
+
+
+
+    <!--////////////////////////// FOOTER /////////////////////////////-->
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hawaii</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="nav-bar">
+            <ul class="clearfix">
+                <li><a href="#">Découverte</a></li>
+                <li><a href="#">Aide</a></li>
+                <li><a href="#">Inscription</a></li>
+                <li><a href="#">Connexion</a></li>
+                <h1>UNUSUAL</h1>
+            </ul>
+        </div>
+
+
+
+        <div id="slider">
+            <!--
+            <div class="slide">
+                <img src="img-layout/oahu.jpeg" alt="hawaii">
+            </div>
+            <div class="slide">
+                <img src="img-layout/oahu2.jpeg" alt="hawaii">
+            </div>
+            <div class="slide">
+                <img src="img-layout/oahu3.jpeg" alt="hawaii">
+            </div>
+            <div class="slide">
+                <img src="img-layout/oahu4.jpeg" alt="hawaii">
+            </div>
+            <div class="slide">
+                <img src="img-layout/oahu5.jpeg" alt="hawaii">
+            </div>
+            <div class="slide">
+                <img src="img-layout/oahu6.jpeg" alt="hawaii">
+            </div>
+            <div class="slide">
+                <img src="img-layout/oahu7.jpeg" alt="hawaii">
+            </div>
+            <div class="slide">
+                <img src="img-layout/oahu8.jpeg" alt="hawaii">
+            </div>
+-->
+            <div class="slide">
+                <img src="img-layout/oahu9.jpg" alt="hawaii">
+            </div>
+        </div>
+    </header>
+
+    <main class="clearfix">
+        <div class="content clearfix">
+
+            <!--////////////////////////////////////           FORMULAIRE         //////////////////////////////////////-->
+            <div class="formulaire">
+
+
+                <!--         DATE           -->
+                <div class="searchform_date">
+                    <label class="searchform_label" for="startdate">
+                        <span>Quand</span>
+                    </label>
+
+                    <div class="searchdate_input">
+                        <div class="dateinput">
+                            <input id="startdate" type="text" placeholder="Arrivée">
+                        </div>
+
+                        <div class="datearrow">
+                            <span>></span>
+                        </div>
+
+                        <div class="dateinputdep">
+                            <input id="enddate" type="text" placeholder="Départ">
+                        </div>
+                    </div>
+                </div>
+
+                <!--                GUEST-->
+
+                <div class="searchform_guest">
+                    <label class="searchform_label">
+                        <span>Voyageurs</span>
+                    </label>
+                    <select id="guest" name="guest">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6+</option>
+                    </select>
+                </div>
+
+
+                <div class="searchform_check">
+                    <label class="searchform_label">
+                        <span>Type de logement</span>
+                    </label>
+                    <li id="appart_li">Appartement
+                        <input type="checkbox">
+                    </li>
+                    <li id="hotel_li">Hotel
+                        <input type="checkbox">
+                    </li>
+                    <li id="home_li">Maison d'hôte
+                        <input type="checkbox">
+                    </li>
+                    <li id="aub_li">Auberge
+                        <input type="checkbox">
+                    </li>
+                </div>
+
+                <div class="searchform_budget">
+                    <label class="searchform_label">
+                        <span>Budget /nuit</span>
+                    </label>
+                    <div class="searchform_range">
+                        <p class="budget_min">0€</p>
+                        <input type="range" value="15" max="500" min="0" step="10">
+                        <p class="budget_max">1000€</p>
+                    </div>
+                </div>
+
+                <div class="searchform_critere clearfix">
+                    <label class="searchform_label">
+                        <span>Nombre d'étoiles</span>
+                        <span id="label_note">Note voyageurs</span>
+                    </label>
+                    <ul class="critere_star">
+                        <li class="star_number one_star">★</li>
+                        <li class="star_number two_star">★</li>
+                        <li class="star_number three_star">★</li>
+                        <li class="star_number four_star">★</li>
+                        <li class="star_number five_star">★</li>
+                        <li id="note_avis">/10</li>
+                    </ul>
+                </div>
+
+                <div class="searchform_option">
+                    <label class="searchform_label">
+                        <span>Option</span>
+                    </label>
+                    <li id="nosmoke_li">Non fumeur
+                        <input type="checkbox">
+                    </li>
+                    <li id="family_li">Chambre familiale
+                        <input type="checkbox">
+                    </li>
+                    <li id="pets_li">Animaux
+                        <input type="checkbox">
+                    </li>
+                    <li id="shuttle_li">Navette
+                        <input type="checkbox">
+                    </li>
+                </div>
+
+                <div class="searchform_activity">
+                    <label class="searchform_label">
+                        <span>Activités incluses</span>
+                    </label>
+                    <ul class="activity_li">
+                        <li id="golf_li">Golf
+                            <input type="checkbox">
+                        </li>
+                        <li id="surf_li">Surf
+                            <input type="checkbox">
+                        </li>
+                        <li id="thalasso_li">Thalasso
+                            <input type="checkbox">
+                        </li>
+                        <li id="visit_li">Visite
+                            <input type="checkbox">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="searchform_booking">
+                    <label class="searchform_label">
+                        <span>Options de réservation</span>
+                    </label>
+                    <ul class="booking_li">
+                        <li id="cancel_li">Annulation gratuite
+                            <input type="checkbox">
+                        </li>
+                        <li id="prepaid_li">Sans prépaiement
+                            <input type="checkbox">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="searchform_search">
+                    <button>RECHERCHE</button>
+                </div>
+            </div>
+
+
+
+            <!-- EXPERIENCE -->
+            <div class="exp clearfix">
+                <h3>Activités à Oahu</h3>
+
+                <figure class="boating">
+                    <a href="#"><img src="img-content/boating1.jpg" alt="boating">
+                        <figcaption>Boating</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="diving">
+                    <a href="#"><img src="img-content/diving.jpg" alt="diving">
+                        <figcaption>Diving</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="paddling">
+                    <a href="#"><img src="img-content/paddling.jpg" alt="paddling">
+                        <figcaption>Paddling</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="kayaking">
+                    <a href="#"><img src="img-content/kayaking.jpg" alt="kayaking">
+                        <figcaption>Kayaking</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="surfing">
+                    <a href="#"><img src="img-content/surfing.jpg" alt="surfing">
+                        <figcaption>Surfing</figcaption>
+                    </a>
+                </figure>
+            </div>
+
+
+            <!-- ANNONCES HOTEL -->
+            <div class="hotel">
+                <h3>Découvrer nos Hôtels</h3>
+                <div class="hotel_select">
+                    <figure class="kahala">
+                        <a href="room.html">
+                            <img src="img-content/kahala.jpg" alt="kahala">
+                            <figcaption>The Kahala Hotel &amp; Resort</figcaption>
+                            <span>149€</span>
+                            <img class="star_avis" src="img-content/star4.jpg" alt="avis">
+                        </a>
+                    </figure>
+
+                    <figure class="hilton">
+                        <a href="room.html">
+                            <img src="img-content/hilton.jpg" alt="hilton">
+                            <figcaption>Hilton Hawaiian Village Waikiki Beach Resort </figcaption>
+                            <span>120€</span>
+                            <img class="star_avis" src="img-content/star35.jpg" alt="avis">
+                        </a>
+                    </figure>
+
+                    <figure class="turtle">
+                        <a href="room.html">
+                            <img src="img-content/turtle.jpg" alt="turtle">
+                            <figcaption>Turtle Bay Resort</figcaption>
+                            <span>130€</span>
+                            <img class="star_avis" src="img-content/star5.jpg" alt="avis">
+                        </a>
+                    </figure>
+
+                    <figure class="paradise">
+                        <a href="room.html">
+                            <img src="img-content/paradise.jpg" alt="paradise">
+                            <figcaption>Paradise Bay Resort</figcaption>
+                            <span>160€</span>
+                            <img class="star_avis" src="img-content/star3.jpg" alt="avis">
+                        </a>
+                    </figure>
+
+                    <figure class="courtyard">
+                        <a href="room.html">
+                            <img src="img-content/courtyard.jpg" alt="courtyard">
+                            <figcaption>Courtyard Oahu North Shore</figcaption>
+                            <span>186€</span>
+                            <img class="star_avis" src="img-content/star4.jpg" alt="avis">
+                        </a>
+                    </figure>
+
+                    <figure class="infinity">
+                        <a href="room.html">
+                            <img src="img-content/infinity.jpg" alt="infinity">
+                            <figcaption>Pacific Beach Hotel Waikiki</figcaption>
+                            <span>157€</span>
+                            <img class="star_avis" src="img-content/star5.jpg" alt="avis">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+
+</html>
